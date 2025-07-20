@@ -1,5 +1,6 @@
 export { google } from './server/oauth.js';
 export { db } from './server/db/index.js';
+export { testDb } from './server/db/test-db.js';
 
 export { authHandler } from './server/handlers/auth-handler.js';
 export {
