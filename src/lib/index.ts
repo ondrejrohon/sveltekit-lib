@@ -21,3 +21,4 @@ export {
 } from './server/handlers/reset-password-verification-handler.js';
 export { loginLoadHandler, loginActions } from './server/handlers/login-handler.js';
 export { forgotPasswordActions } from './server/handlers/forgot-password-handler.js';
+export { jwtLoginHandler, jwtRefreshHandler } from './server/handlers/token-auth-handler.js';
