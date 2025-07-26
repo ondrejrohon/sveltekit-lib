@@ -16,6 +16,11 @@ interface EmailOptions {
 
 export async function sendEmail(options: EmailOptions) {
 	try {
+		if (options.to.includes('@example.com')) {
+			console.log('Skipping email to example.com');
+			return { success: true, response: { messageId: '123' } };
+		}
+
 		const sentFrom = new Sender(
 			options.from || 'noreply@ondrejrohon.com',
 			options.fromName || 'Slova Test'
